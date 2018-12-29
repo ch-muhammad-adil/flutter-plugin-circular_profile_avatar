@@ -41,7 +41,7 @@ and run
 
 If this project help you reduce time to develop, you can give me a cup of coffee :) 
 
-[Help me using Paypal -> ](paypal.me/madil7)
+[Help me using Paypal -> ](https://paypal.me/madil7)
 
 ## Getting Started
 
