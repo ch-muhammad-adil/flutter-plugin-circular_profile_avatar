@@ -13,7 +13,7 @@ CircularProfileAvatar is a Flutter package which allows developers to implement 
    Add this to your package's pubspec.yaml file:      
          
     dependencies:
-       circular_profile_avatar: ^0.0.2
+       circular_profile_avatar: ^0.0.3
 
 and run 
 
@@ -24,25 +24,28 @@ and run
        
  
         CircularProfileAvatar(
-              radius: 100, // set radius of the circle , default 50.0              
-              backgroundColor: Colors.green, // set background color, default Colors.white
-              borderWidth: 10,  // set border of profile picture, default value is 0.0
+              radius: 100, // sets radius, default 50.0              
+              backgroundColor: Colors.green, // sets background color, default Colors.white
+              borderWidth: 10,  // sets border, default 0.0
               initialsText: Text(
                 "AD",
                 style: TextStyle(fontSize: 40, color: Colors.white),
-              ),  // sets initials text of the user name , set your own style, default value is Text('')
-              borderColor: Colors.brown, // sets border colour, default is Colors.white
+              ),  // sets initials text, set your own style, default Text('')
+              borderColor: Colors.brown, // sets border color, default Colors.white
               elevation: 5.0, // sets elevation (shadow of the profile picture), default value is 0.0
-              foregroundColor: Colors.brown.withOpacity(0.5), sets foreground colour of the profile picture, it works if showInitialTextAbovePicture = true , default value is Colors.transparent
+              foregroundColor: Colors.brown.withOpacity(0.5), //sets foreground colour, it works if showInitialTextAbovePicture = true , default Colors.transparent
               onTap: () {
                 print('adil');
               }, // sets on tap 
-              showInitialTextAbovePicture: true, // setting it true will show initials text above profile picture, default value is false  
+              showInitialTextAbovePicture: true, // setting it true will show initials text above profile picture, default false  
               imagePath:
                   'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4'), //sets image path, it should be a URL string. default value is empty string, if path is empty it will display only initials
         )
 
 
+If this project help you reduce time to develop, you can give me a cup of coffee :) 
+
+[Help me using Paypal -> ](paypal.me/madil7)
 
 ## Getting Started
 
