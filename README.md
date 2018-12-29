@@ -24,8 +24,7 @@ and run
        
  
         CircularProfileAvatar(
-              height: 200, // set height , default 50.0
-              width: 200,  // set width , default 50.0
+              radius: 100, // set radius of the circle , default 50.0              
               backgroundColor: Colors.green, // set background color, default Colors.white
               borderWidth: 10,  // set border of profile picture, default value is 0.0
               initialsText: Text(
