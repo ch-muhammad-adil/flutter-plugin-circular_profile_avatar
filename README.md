@@ -9,7 +9,7 @@ CircularProfileAvatar is a Flutter package which allows developers to implement 
    Add this to your package's pubspec.yaml file:      
          
     dependencies:
-       circular_profile_avatar: ^0.1.3
+       circular_profile_avatar: ^0.1.4
 
 and run 
 
