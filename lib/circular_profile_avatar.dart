@@ -5,31 +5,56 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-/// A Calculator.
+///CircularProfileAvatar allows developers to implement circular profile avatar with border,
+/// overlay, initialsText and many other features which simplifies developer's job.
+/// It is an alternative to Flutter's CircleAvatar Widget.
 class CircularProfileAvatar extends StatefulWidget {
   CircularProfileAvatar(
       {Key key,
-      Text this.initialsText = const Text(''),
-      String this.imageUrl = '',
-      double this.radius = 50.0,
-      double this.borderWidth = 0.0,
-      Color this.borderColor = Colors.white,
-      Color this.backgroundColor = Colors.white,
-      double this.elevation = 0.0,
-      bool this.showInitialTextAbovePicture = false,
+      this.initialsText = const Text(''),
+        this.imageUrl = '',
+      this.radius = 50.0,
+      this.borderWidth = 0.0,
+      this.borderColor = Colors.white,
+      this.backgroundColor = Colors.white,
+      this.elevation = 0.0,
+      this.showInitialTextAbovePicture = false,
         this.onTap,
-      Color this.foregroundColor = Colors.transparent})
+      this.foregroundColor = Colors.transparent})
       : super(key: key);
-  double radius;
-  double elevation;
-  double borderWidth;
-  Color borderColor;
-  Color backgroundColor;
-  Color foregroundColor;
-  String imageUrl;
-  Text initialsText;
-  bool showInitialTextAbovePicture;
-  Widget _initialsText;
+  /// sets radius of the avatar circle, [borderWidth] is also included in this radius.
+  /// default value is 0.0
+  final double radius;
+  /// sets shadow of the circle,
+  /// default value is 0.0
+  final double elevation;
+
+  /// sets the borderWidth of the circile,
+  /// default value is 0.0
+  final double borderWidth;
+  /// The color with which to fill the border of the circle.
+  /// default value [Colors.white]
+  final Color borderColor;
+
+  /// The color with which to fill the circle.
+  /// default value [Colors.white]
+  final Color backgroundColor;
+
+  /// sets the [foregroundColor] of the circle, It only works if [showInitialTextAbovePicture] is set to true.
+  /// [foregroundColor] doesn't include border of the circle.
+  final Color foregroundColor;
+
+  /// it takes a URL of the profile image.
+  final String imageUrl;
+
+  /// Sets the initials of user's name.
+  final Text initialsText;
+
+  /// Displays initials above profile picture if set to true, You can set [foregroundColor] value as well if [showInitialTextAbovePicture]
+  /// is set to true.
+  final bool showInitialTextAbovePicture;
+
+  /// sets onTap gesture.
   final GestureTapCallback onTap;
 
 
