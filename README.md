@@ -2,6 +2,18 @@
 
 A Flutter package which allows developers to implement circular profile image&#x2F;avatar with border, overlay, initialsText and many other awesome features, which simplifies developers job. 
 
+
+# Installation
+         
+   Add this to your package's pubspec.yaml file:      
+         
+    dependencies:
+       circular_profile_avatar: ^0.0.2
+
+and run 
+
+     flutter packages get
+
 # Usage
 
        

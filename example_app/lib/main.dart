@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Circular Profile Avatar'),
     );
   }
 }
@@ -33,24 +33,53 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: Center(
-          child: CircularProfileAvatar(
-              height: 200,
-              width: 200,
-              backgroundColor: Colors.green,
-              borderWidth: 10,
-              initialsText: Text(
-                "AD",
-                style: TextStyle(fontSize: 40, color: Colors.white),
-              ),
-              borderColor: Colors.brown,
-              elevation: 5.0,
-              foregroundColor: Colors.brown.withOpacity(0.5),
-              onTap: () {
-                print('adil');
-              },
-              showInitialTextAbovePicture: true,
-              imagePath:
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              CircularProfileAvatar(
+                  radius: 100,
+                  backgroundColor: Colors.green,
+                  borderWidth: 10,
+                  initialsText: Text(
+                    "AD",
+                    style: TextStyle(fontSize: 40, color: Colors.white),
+                  ),
+                  borderColor: Colors.brown,
+                  elevation: 5.0,
+                  onTap: () {
+                    print('adil');
+                  },
+                  imageUrl:
+                      'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4'),
+              CircularProfileAvatar(
+                  radius: 120,
+                  backgroundColor: Colors.green,
+                  borderWidth: 10,
+                  initialsText: Text(
+                    "AD",
+                    style: TextStyle(fontSize: 40, color: Colors.white),
+                  ),
+                  borderColor: Colors.yellow,
+                  elevation: 5.0,
+                  foregroundColor: Colors.yellow.withOpacity(0.5),
+                  onTap: () {
+                    print('adil');
+                  },
+                  showInitialTextAbovePicture: true,
+                  imageUrl:
                   'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4'),
+              CircularProfileAvatar(
+                  radius: 70,
+                  backgroundColor: Colors.green,
+                  initialsText: Text(
+                    "AD",
+                    style: TextStyle(fontSize: 40, color: Colors.white),
+                  ),
+                  elevation: 5.0,
+              ),
+
+            ],
+          ),
         ));
   }
 }

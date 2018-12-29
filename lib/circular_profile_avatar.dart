@@ -10,9 +10,8 @@ class CircularProfileAvatar extends StatefulWidget {
   CircularProfileAvatar(
       {Key key,
       Text this.initialsText = const Text(''),
-      String this.imagePath = '',
-      double this.height = 50.0,
-      double this.width = 50.0,
+      String this.imageUrl = '',
+      double this.radius = 50.0,
       double this.borderWidth = 0.0,
       Color this.borderColor = Colors.white,
       Color this.backgroundColor = Colors.white,
@@ -21,25 +20,24 @@ class CircularProfileAvatar extends StatefulWidget {
         this.onTap,
       Color this.foregroundColor = Colors.transparent})
       : super(key: key);
-  double height;
-  double width;
+  double radius;
   double elevation;
   double borderWidth;
   Color borderColor;
   Color backgroundColor;
   Color foregroundColor;
-  String imagePath;
+  String imageUrl;
   Text initialsText;
   bool showInitialTextAbovePicture;
   Widget _initialsText;
   final GestureTapCallback onTap;
 
+
   @override
   _CircularProfileAvatarState createState() => _CircularProfileAvatarState(
       initialsText: this.initialsText,
-      imagePath: imagePath,
-      height: height,
-      width: width,
+      imageUrl: imageUrl,
+      radius: radius,
       borderWidth: borderWidth,
       borderColor: borderColor,
       backgroundColor: backgroundColor,
@@ -52,9 +50,8 @@ class CircularProfileAvatar extends StatefulWidget {
 class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
   _CircularProfileAvatarState(
       {this.initialsText,
-      this.imagePath,
-      this.height,
-      this.width,
+      this.imageUrl,
+      this.radius,
       this.borderWidth,
       this.borderColor,
       this.backgroundColor,
@@ -65,12 +62,11 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
 
   Color foregroundColor;
   double elevation;
-  double height;
-  double width;
+  double radius;
   double borderWidth;
   Color borderColor;
   Color backgroundColor;
-  String imagePath;
+  String imageUrl;
   Text initialsText;
   bool showInitialTextAbovePicture;
   Widget _initialsText;
@@ -80,11 +76,11 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
   Image _image;
 
   void _loadImage() async {
-    if (imagePath.isEmpty) {
+    if (imageUrl.isEmpty) {
       return;
     }
     _image = new Image.network(
-      imagePath,
+      imageUrl,
     );
     final ImageStream stream = _image.image.resolve(ImageConfiguration.empty);
     final Completer<void> completer = Completer<void>();
@@ -108,17 +104,17 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
         elevation: elevation,
         color: borderColor,
         child: Container(
-            height: height,
-            width: width,
+            height: radius*2,
+            width: radius*2,
             padding: EdgeInsets.all(borderWidth),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(height / 2),
+                borderRadius: BorderRadius.circular(radius),
                 color: borderColor),
             child: Center(
               child: Container(
                 decoration: BoxDecoration(
                     color: backgroundColor,
-                    borderRadius: BorderRadius.circular(height / 2)),
+                    borderRadius: BorderRadius.circular(radius)),
                 child: Stack(
                   fit: StackFit.expand,
                   children: showInitialTextAbovePicture
@@ -130,7 +126,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                             decoration: BoxDecoration(
                                 color: foregroundColor,
                                 borderRadius:
-                                    BorderRadius.circular(height / 2)),
+                                    BorderRadius.circular(radius)),
                           ),
                           _initialsText,
                         ]
