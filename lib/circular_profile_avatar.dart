@@ -12,19 +12,21 @@ class CircularProfileAvatar extends StatefulWidget {
   CircularProfileAvatar(
       {Key key,
       this.initialsText = const Text(''),
-        this.imageUrl = '',
+      this.imageUrl = '',
       this.radius = 50.0,
       this.borderWidth = 0.0,
       this.borderColor = Colors.white,
       this.backgroundColor = Colors.white,
       this.elevation = 0.0,
       this.showInitialTextAbovePicture = false,
-        this.onTap,
+      this.onTap,
       this.foregroundColor = Colors.transparent})
       : super(key: key);
+
   /// sets radius of the avatar circle, [borderWidth] is also included in this radius.
   /// default value is 0.0
   final double radius;
+
   /// sets shadow of the circle,
   /// default value is 0.0
   final double elevation;
@@ -32,6 +34,7 @@ class CircularProfileAvatar extends StatefulWidget {
   /// sets the borderWidth of the circile,
   /// default value is 0.0
   final double borderWidth;
+
   /// The color with which to fill the border of the circle.
   /// default value [Colors.white]
   final Color borderColor;
@@ -57,55 +60,21 @@ class CircularProfileAvatar extends StatefulWidget {
   /// sets onTap gesture.
   final GestureTapCallback onTap;
 
-
   @override
-  _CircularProfileAvatarState createState() => _CircularProfileAvatarState(
-      initialsText: this.initialsText,
-      imageUrl: imageUrl,
-      radius: radius,
-      borderWidth: borderWidth,
-      borderColor: borderColor,
-      backgroundColor: backgroundColor,
-      elevation: elevation,
-      showInitialTextAbovePicture: showInitialTextAbovePicture,
-      foregroundColor: foregroundColor,
-      onTap: onTap);
+  _CircularProfileAvatarState createState() => _CircularProfileAvatarState();
 }
 
 class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
-  _CircularProfileAvatarState(
-      {this.initialsText,
-      this.imageUrl,
-      this.radius,
-      this.borderWidth,
-      this.borderColor,
-      this.backgroundColor,
-      this.elevation,
-      this.showInitialTextAbovePicture,
-      this.foregroundColor,
-      this.onTap});
-
-  Color foregroundColor;
-  double elevation;
-  double radius;
-  double borderWidth;
-  Color borderColor;
-  Color backgroundColor;
-  String imageUrl;
-  Text initialsText;
-  bool showInitialTextAbovePicture;
   Widget _initialsText;
-  final GestureTapCallback onTap;
   bool _imageLoading = true;
-
   Image _image;
 
   void _loadImage() async {
-    if (imageUrl.isEmpty) {
+    if (widget.imageUrl.isEmpty) {
       return;
     }
     _image = new Image.network(
-      imageUrl,
+      widget.imageUrl,
     );
     final ImageStream stream = _image.image.resolve(ImageConfiguration.empty);
     final Completer<void> completer = Completer<void>();
@@ -120,38 +89,38 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
 
   @override
   Widget build(BuildContext context) {
-    _initialsText = Center(child: initialsText);
+    _initialsText = Center(child: widget.initialsText);
     _loadImage();
     return GestureDetector(
-      onTap: onTap,
+      onTap: widget.onTap,
       child: Material(
         type: MaterialType.circle,
-        elevation: elevation,
-        color: borderColor,
+        elevation: widget.elevation,
+        color: widget.borderColor,
         child: Container(
-            height: radius*2,
-            width: radius*2,
-            padding: EdgeInsets.all(borderWidth),
+            height: widget.radius * 2,
+            width: widget.radius * 2,
+            padding: EdgeInsets.all(widget.borderWidth),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(radius),
-                color: borderColor),
+                borderRadius: BorderRadius.circular(widget.radius),
+                color: widget.borderColor),
             child: Center(
               child: Container(
                 decoration: BoxDecoration(
-                    color: backgroundColor,
-                    borderRadius: BorderRadius.circular(radius)),
+                    color: widget.backgroundColor,
+                    borderRadius: BorderRadius.circular(widget.radius)),
                 child: Stack(
                   fit: StackFit.expand,
-                  children: showInitialTextAbovePicture
+                  children: widget.showInitialTextAbovePicture
                       ? <Widget>[
                           CircleAvatar(
                             backgroundImage: _image.image,
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                color: foregroundColor,
+                                color: widget.foregroundColor,
                                 borderRadius:
-                                    BorderRadius.circular(radius)),
+                                    BorderRadius.circular(widget.radius)),
                           ),
                           _initialsText,
                         ]

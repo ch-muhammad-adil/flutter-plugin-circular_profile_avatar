@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flutter/material.dart';
 
@@ -36,8 +37,15 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
+              CachedNetworkImage(
+                height: 180,
+                width: 180,
+                imageUrl: "https://avatars0.githubusercontent.com/u/8264639?s=460&v=4",
+                placeholder: new CircularProgressIndicator(),
+                errorWidget: new Icon(Icons.error),
+              ),
               CircularProfileAvatar(
-                  radius: 100,
+                  radius: 90,
                   backgroundColor: Colors.green,
                   borderWidth: 10,
                   initialsText: Text(
@@ -52,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   imageUrl:
                       'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4'),
               CircularProfileAvatar(
-                  radius: 120,
+                  radius: 90,
                   backgroundColor: Colors.green,
                   borderWidth: 10,
                   initialsText: Text(
