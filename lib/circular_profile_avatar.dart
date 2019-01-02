@@ -1,7 +1,7 @@
 library circular_profile_avatar;
 
 import 'dart:async';
-
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -13,6 +13,7 @@ class CircularProfileAvatar extends StatefulWidget {
       {Key key,
       this.initialsText = const Text(''),
       this.imageUrl = '',
+      this.cacheImage = false,
       this.radius = 50.0,
       this.borderWidth = 0.0,
       this.borderColor = Colors.white,
@@ -57,6 +58,9 @@ class CircularProfileAvatar extends StatefulWidget {
   /// is set to true.
   final bool showInitialTextAbovePicture;
 
+  /// Cache the image against [imageUrl] in app memory if set true. it is false by default.
+  final bool cacheImage;
+
   /// sets onTap gesture.
   final GestureTapCallback onTap;
 
@@ -66,31 +70,35 @@ class CircularProfileAvatar extends StatefulWidget {
 
 class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
   Widget _initialsText;
-  bool _imageLoading = true;
-  Image _image;
+//  bool _imageLoading = true;
+//  Image _image;
 
-  void _loadImage() async {
-    if (widget.imageUrl.isEmpty) {
-      return;
-    }
-    _image = new Image.network(
-      widget.imageUrl,
-    );
-    final ImageStream stream = _image.image.resolve(ImageConfiguration.empty);
-    final Completer<void> completer = Completer<void>();
-    stream.addListener((ImageInfo info, bool syncCall) => completer.complete());
-    await completer.future;
-    if (mounted) {
-      setState(() {
-        _imageLoading = false;
-      });
-    }
-  }
+//  void _loadImage() async {
+//    if (widget.imageUrl.isEmpty) {
+//      return;
+//    }
+//    _image = new Image.network(
+//      widget.imageUrl,
+//    );
+//    final ImageStream stream = _image.image.resolve(ImageConfiguration.empty);
+//    final Completer<void> completer = Completer<void>();
+//    stream.addListener((ImageInfo info, bool syncCall) => completer.complete());
+//    await completer.future;
+//    if (mounted) {
+//      setState(() {
+//        _imageLoading = false;
+//      });
+//    }
+//  }
 
   @override
   Widget build(BuildContext context) {
     _initialsText = Center(child: widget.initialsText);
-    _loadImage();
+//    if (!widget.cacheImage) {
+//      _loadImage();
+//    } else {
+//      _imageLoading = false;
+//    }
     return GestureDetector(
       onTap: widget.onTap,
       child: Material(
@@ -113,9 +121,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                   fit: StackFit.expand,
                   children: widget.showInitialTextAbovePicture
                       ? <Widget>[
-                          CircleAvatar(
-                            backgroundImage: _image.image,
-                          ),
+                          profileImage(),
                           Container(
                             decoration: BoxDecoration(
                                 color: widget.foregroundColor,
@@ -124,17 +130,24 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                           ),
                           _initialsText,
                         ]
-                      : <Widget>[
-                          _imageLoading
-                              ? _initialsText
-                              : CircleAvatar(
-                                  backgroundImage: _image.image,
-                                )
-                        ],
+                      : <Widget>[_initialsText, profileImage()],
                 ),
               ),
             )),
       ),
     );
+  }
+
+  Widget profileImage() {
+    return widget.cacheImage
+        ? ClipRRect(
+            borderRadius: BorderRadius.circular(widget.radius),
+            child: CachedNetworkImage(
+              imageUrl: widget.imageUrl,
+            ),
+          )
+        : CircleAvatar(
+            backgroundImage: NetworkImage(widget.imageUrl),
+          );
   }
 }

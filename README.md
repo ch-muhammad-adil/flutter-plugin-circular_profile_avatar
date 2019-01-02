@@ -9,7 +9,7 @@ CircularProfileAvatar is a Flutter package which allows developers to implement 
    Add this to your package's pubspec.yaml file:      
          
     dependencies:
-       circular_profile_avatar: ^0.1.5
+       circular_profile_avatar: ^0.1.6
 
 and run 
 
@@ -21,7 +21,7 @@ and run
  
         CircularProfileAvatar(
               radius: 100, // sets radius, default 50.0              
-              backgroundColor: Colors.green, // sets background color, default Colors.white
+              backgroundColor: Colors.transparent, // sets background color, default Colors.white
               borderWidth: 10,  // sets border, default 0.0
               initialsText: Text(
                 "AD",
@@ -30,11 +30,12 @@ and run
               borderColor: Colors.brown, // sets border color, default Colors.white
               elevation: 5.0, // sets elevation (shadow of the profile picture), default value is 0.0
               foregroundColor: Colors.brown.withOpacity(0.5), //sets foreground colour, it works if showInitialTextAbovePicture = true , default Colors.transparent
+              cacheImage: true, // allow widget to cache image against provided url
               onTap: () {
                 print('adil');
               }, // sets on tap 
               showInitialTextAbovePicture: true, // setting it true will show initials text above profile picture, default false  
-              imagePath:
+              imageUrl:
                   'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4'), //sets image path, it should be a URL string. default value is empty string, if path is empty it will display only initials
         )
 
