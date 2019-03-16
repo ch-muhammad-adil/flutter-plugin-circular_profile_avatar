@@ -38,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               CircularProfileAvatar(
+                  'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4',
                   radius: 90,
                   backgroundColor: Colors.transparent,
                   borderWidth: 10,
@@ -52,8 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                   cacheImage: true,
                   showInitialTextAbovePicture: true,
-                  imageUrl:
-                      'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4'),
+                  ),
 
             ],
           ),

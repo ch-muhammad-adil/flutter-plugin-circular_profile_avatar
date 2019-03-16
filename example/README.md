@@ -13,6 +13,7 @@
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       CircularProfileAvatar(
+                       'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4',
                           radius: 100,
                           backgroundColor: Colors.green,
                           borderWidth: 10,
@@ -25,9 +26,9 @@
                           onTap: () {
                             print('adil');
                           },
-                          imageUrl:
-                              'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4'),
+                          ),
                       CircularProfileAvatar(
+                      'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4',
                           radius: 120,
                           backgroundColor: Colors.green,
                           borderWidth: 10,
@@ -42,8 +43,7 @@
                             print('adil');
                           },
                           showInitialTextAbovePicture: true,
-                          imageUrl:
-                          'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4'),
+                          ),
                       CircularProfileAvatar(
                           radius: 70,
                           backgroundColor: Colors.green,

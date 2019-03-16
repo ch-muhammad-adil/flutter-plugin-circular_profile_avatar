@@ -10,9 +10,9 @@ import 'package:flutter/widgets.dart';
 /// It is an alternative to Flutter's CircleAvatar Widget.
 class CircularProfileAvatar extends StatefulWidget {
   CircularProfileAvatar(
+      this.imageUrl,
       {Key key,
       this.initialsText = const Text(''),
-      this.imageUrl = '',
       this.cacheImage = false,
       this.radius = 50.0,
       this.borderWidth = 0.0,
@@ -143,6 +143,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
         ? ClipRRect(
             borderRadius: BorderRadius.circular(widget.radius),
             child: CachedNetworkImage(
+              fit: BoxFit.cover,
               imageUrl: widget.imageUrl,
             ),
           )
