@@ -12,7 +12,7 @@ class CircularProfileAvatar extends StatefulWidget {
   CircularProfileAvatar(this.imageUrl,
       {Key key,
         this.initialsText = const Text(''),
-        this.cacheImage = false,
+        this.cacheImage = true,
         this.radius = 50.0,
         this.borderWidth = 0.0,
         this.borderColor = Colors.white,
@@ -20,7 +20,7 @@ class CircularProfileAvatar extends StatefulWidget {
         this.elevation = 0.0,
         this.showInitialTextAbovePicture = false,
         this.onTap,
-        this.foregroundColor = Colors.transparent, this.placeHolder})
+        this.foregroundColor = Colors.transparent, this.placeHolder,this.errorWidget,this.imageBuilder,this.useOldImageOnUrlChange})
       : super(key: key);
 
   /// sets radius of the avatar circle, [borderWidth] is also included in this radius.
@@ -57,7 +57,7 @@ class CircularProfileAvatar extends StatefulWidget {
   /// is set to true.
   final bool showInitialTextAbovePicture;
 
-  /// Cache the image against [imageUrl] in app memory if set true. it is false by default.
+  /// Cache the image against [imageUrl] in app memory if set true. it is true by default.
   final bool cacheImage;
 
   /// sets onTap gesture.
@@ -65,7 +65,17 @@ class CircularProfileAvatar extends StatefulWidget {
 
 
   /// Widget displayed while the target [imageUrl] is loading, works only if [cacheImage] is true.
-  final Widget placeHolder;
+  final PlaceholderWidgetBuilder placeHolder;
+
+  /// Widget displayed while the target [imageUrl] failed loading.
+  final LoadingErrorWidgetBuilder errorWidget;
+
+  /// Optional builder to further customize the display of the image.
+  final ImageWidgetBuilder imageBuilder;
+
+  /// When set to true it will animate from the old image to the new image
+  /// if the url changes.
+  final bool useOldImageOnUrlChange;
 
   @override
   _CircularProfileAvatarState createState() => _CircularProfileAvatarState();
@@ -123,7 +133,10 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
       child: CachedNetworkImage(
         fit: BoxFit.cover,
         imageUrl: widget.imageUrl,
-        placeholder: (context, url) => widget.placeHolder,
+        errorWidget: widget.errorWidget,
+        placeholder: widget.placeHolder,
+        imageBuilder: widget.imageBuilder,
+        useOldImageOnUrlChange: widget.useOldImageOnUrlChange==null?false:widget.useOldImageOnUrlChange,
       ),
     )
         : CircleAvatar(

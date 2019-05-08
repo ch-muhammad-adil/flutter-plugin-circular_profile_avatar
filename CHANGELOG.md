@@ -1,5 +1,8 @@
+## [0.1.9] - 8 May 2019
+added image error widget, fixed small issues
+
 ## [0.1.8] - 8 May 2019
-Fixed some issues, added image placeholder  
+Fixed some issues, added image placeholder widget  
 
 ## [0.1.6] - 2 January 2019
 Added image cache 

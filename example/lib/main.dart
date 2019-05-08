@@ -38,23 +38,33 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               CircularProfileAvatar(
-                  'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4',
-                  radius: 90,
-                  backgroundColor: Colors.transparent,
-                  borderWidth: 10,
-                  initialsText: Text(
-                    "AD",
-                    style: TextStyle(fontSize: 40, color: Colors.white),
-                  ),
-                  borderColor: Colors.red,
-                  elevation: 5.0,
-                  onTap: () {
-                    print('adil');
-                  },
-                  cacheImage: true,
-                  showInitialTextAbovePicture: true,
-                  ),
+//                  'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4',
+//                  'http://plavixprime.com/wp-content/uploads/nature-beauty-denmarks-natural-beauty-spots-your-guide-to-natures-most.jpg',
 
+                'https/avatars0.github',
+                errorWidget: (context, url, error) => Container(
+                      child: Icon(Icons.error),
+                    ),
+                placeHolder: (context, url) => Container(
+                      width: 50,
+                      height: 50,
+                      child: CircularProgressIndicator(),
+                    ),
+                radius: 90,
+                backgroundColor: Colors.transparent,
+                borderWidth: 10,
+//                  initialsText: Text(
+//                    "AD",
+//                    style: TextStyle(fontSize: 40, color: Colors.white),
+//                  ),
+                borderColor: Colors.red,
+                elevation: 5.0,
+                onTap: () {
+                  print('adil');
+                },
+                cacheImage: true,
+                showInitialTextAbovePicture: false,
+              ),
             ],
           ),
         ));
