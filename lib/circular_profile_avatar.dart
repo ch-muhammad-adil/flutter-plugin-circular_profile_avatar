@@ -73,36 +73,9 @@ class CircularProfileAvatar extends StatefulWidget {
 
 class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
   Widget _initialsText;
-
-//  bool _imageLoading = true;
-//  Image _image;
-
-//  void _loadImage() async {
-//    if (widget.imageUrl.isEmpty) {
-//      return;
-//    }
-//    _image = new Image.network(
-//      widget.imageUrl,
-//    );
-//    final ImageStream stream = _image.image.resolve(ImageConfiguration.empty);
-//    final Completer<void> completer = Completer<void>();
-//    stream.addListener((ImageInfo info, bool syncCall) => completer.complete());
-//    await completer.future;
-//    if (mounted) {
-//      setState(() {
-//        _imageLoading = false;
-//      });
-//    }
-//  }
-
   @override
   Widget build(BuildContext context) {
     _initialsText = Center(child: widget.initialsText);
-//    if (!widget.cacheImage) {
-//      _loadImage();
-//    } else {
-//      _imageLoading = false;
-//    }
     return GestureDetector(
       onTap: widget.onTap,
       child: Material(
@@ -123,18 +96,19 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                     borderRadius: BorderRadius.circular(widget.radius)),
                 child: Stack(
                   fit: StackFit.expand,
-                  children: widget.showInitialTextAbovePicture
+                  children: widget.imageUrl.isEmpty
+                      ? <Widget>[_initialsText]
+                      : widget.showInitialTextAbovePicture
                       ? <Widget>[
                     profileImage(),
                     Container(
                       decoration: BoxDecoration(
-                          color: widget.foregroundColor,
-                          borderRadius:
-                          BorderRadius.circular(widget.radius)),
+                        color: widget.foregroundColor,
+                        borderRadius:
+                        BorderRadius.circular(widget.radius),),
                     ),
                     _initialsText,
-                  ]
-                      : <Widget>[_initialsText, profileImage()],
+                  ] : <Widget>[_initialsText, profileImage(),],
                 ),
               ),
             )),
@@ -144,9 +118,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
 
   Widget profileImage() {
     return widget.cacheImage
-        ? widget.imageUrl.isEmpty ? CircleAvatar(
-      backgroundImage: NetworkImage(widget.imageUrl),
-    ) : ClipRRect(
+        ? ClipRRect(
       borderRadius: BorderRadius.circular(widget.radius),
       child: CachedNetworkImage(
         fit: BoxFit.cover,
