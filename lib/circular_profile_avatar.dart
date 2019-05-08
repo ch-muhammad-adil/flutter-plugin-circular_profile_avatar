@@ -9,19 +9,18 @@ import 'package:flutter/widgets.dart';
 /// overlay, initialsText and many other features which simplifies developer's job.
 /// It is an alternative to Flutter's CircleAvatar Widget.
 class CircularProfileAvatar extends StatefulWidget {
-  CircularProfileAvatar(
-      this.imageUrl,
+  CircularProfileAvatar(this.imageUrl,
       {Key key,
-      this.initialsText = const Text(''),
-      this.cacheImage = false,
-      this.radius = 50.0,
-      this.borderWidth = 0.0,
-      this.borderColor = Colors.white,
-      this.backgroundColor = Colors.white,
-      this.elevation = 0.0,
-      this.showInitialTextAbovePicture = false,
-      this.onTap,
-      this.foregroundColor = Colors.transparent})
+        this.initialsText = const Text(''),
+        this.cacheImage = false,
+        this.radius = 50.0,
+        this.borderWidth = 0.0,
+        this.borderColor = Colors.white,
+        this.backgroundColor = Colors.white,
+        this.elevation = 0.0,
+        this.showInitialTextAbovePicture = false,
+        this.onTap,
+        this.foregroundColor = Colors.transparent, this.placeHolder})
       : super(key: key);
 
   /// sets radius of the avatar circle, [borderWidth] is also included in this radius.
@@ -64,12 +63,17 @@ class CircularProfileAvatar extends StatefulWidget {
   /// sets onTap gesture.
   final GestureTapCallback onTap;
 
+
+  /// Widget displayed while the target [imageUrl] is loading, works only if [cacheImage] is true.
+  final Widget placeHolder;
+
   @override
   _CircularProfileAvatarState createState() => _CircularProfileAvatarState();
 }
 
 class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
   Widget _initialsText;
+
 //  bool _imageLoading = true;
 //  Image _image;
 
@@ -121,15 +125,15 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                   fit: StackFit.expand,
                   children: widget.showInitialTextAbovePicture
                       ? <Widget>[
-                          profileImage(),
-                          Container(
-                            decoration: BoxDecoration(
-                                color: widget.foregroundColor,
-                                borderRadius:
-                                    BorderRadius.circular(widget.radius)),
-                          ),
-                          _initialsText,
-                        ]
+                    profileImage(),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: widget.foregroundColor,
+                          borderRadius:
+                          BorderRadius.circular(widget.radius)),
+                    ),
+                    _initialsText,
+                  ]
                       : <Widget>[_initialsText, profileImage()],
                 ),
               ),
@@ -140,15 +144,18 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
 
   Widget profileImage() {
     return widget.cacheImage
-        ? ClipRRect(
-            borderRadius: BorderRadius.circular(widget.radius),
-            child: CachedNetworkImage(
-              fit: BoxFit.cover,
-              imageUrl: widget.imageUrl,
-            ),
-          )
+        ? widget.imageUrl.isEmpty ? CircleAvatar(
+      backgroundImage: NetworkImage(widget.imageUrl),
+    ) : ClipRRect(
+      borderRadius: BorderRadius.circular(widget.radius),
+      child: CachedNetworkImage(
+        fit: BoxFit.cover,
+        imageUrl: widget.imageUrl,
+        placeholder: (context, url) => widget.placeHolder,
+      ),
+    )
         : CircleAvatar(
-            backgroundImage: NetworkImage(widget.imageUrl),
-          );
+      backgroundImage: NetworkImage(widget.imageUrl),
+    );
   }
 }
