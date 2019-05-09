@@ -1,3 +1,6 @@
+## [0.2.0] - 8 May 2019
+upgraded dependencies
+
 ## [0.1.9] - 8 May 2019
 added image error widget, fixed small issues
 
