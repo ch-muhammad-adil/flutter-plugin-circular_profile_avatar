@@ -43,13 +43,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 'https/avatars0.github',
                 errorWidget: (context, url, error) => Container(
-                      child: Icon(Icons.error),
-                    ),
+                  child: Icon(Icons.error),
+                ),
                 placeHolder: (context, url) => Container(
-                      width: 50,
-                      height: 50,
-                      child: CircularProgressIndicator(),
-                    ),
+                  width: 50,
+                  height: 50,
+                  child: CircularProgressIndicator(),
+                ),
                 radius: 90,
                 backgroundColor: Colors.transparent,
                 borderWidth: 10,

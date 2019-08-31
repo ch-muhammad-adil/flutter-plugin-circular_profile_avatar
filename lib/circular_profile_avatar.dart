@@ -10,16 +10,20 @@ import 'package:flutter/widgets.dart';
 class CircularProfileAvatar extends StatefulWidget {
   CircularProfileAvatar(this.imageUrl,
       {Key key,
-        this.initialsText = const Text(''),
-        this.cacheImage = true,
-        this.radius = 50.0,
-        this.borderWidth = 0.0,
-        this.borderColor = Colors.white,
-        this.backgroundColor = Colors.white,
-        this.elevation = 0.0,
-        this.showInitialTextAbovePicture = false,
-        this.onTap,
-        this.foregroundColor = Colors.transparent, this.placeHolder,this.errorWidget,this.imageBuilder,this.useOldImageOnUrlChange})
+      this.initialsText = const Text(''),
+      this.cacheImage = true,
+      this.radius = 50.0,
+      this.borderWidth = 0.0,
+      this.borderColor = Colors.white,
+      this.backgroundColor = Colors.white,
+      this.elevation = 0.0,
+      this.showInitialTextAbovePicture = false,
+      this.onTap,
+      this.foregroundColor = Colors.transparent,
+      this.placeHolder,
+      this.errorWidget,
+      this.imageBuilder,
+      this.useOldImageOnUrlChange})
       : super(key: key);
 
   /// sets radius of the avatar circle, [borderWidth] is also included in this radius.
@@ -61,7 +65,6 @@ class CircularProfileAvatar extends StatefulWidget {
 
   /// sets onTap gesture.
   final GestureTapCallback onTap;
-
 
   /// Widget displayed while the target [imageUrl] is loading, works only if [cacheImage] is true.
   final PlaceholderWidgetBuilder placeHolder;
@@ -108,16 +111,21 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                   children: widget.imageUrl.isEmpty
                       ? <Widget>[_initialsText]
                       : widget.showInitialTextAbovePicture
-                      ? <Widget>[
-                    profileImage(),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: widget.foregroundColor,
-                        borderRadius:
-                        BorderRadius.circular(widget.radius),),
-                    ),
-                    _initialsText,
-                  ] : <Widget>[_initialsText, profileImage(),],
+                          ? <Widget>[
+                              profileImage(),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: widget.foregroundColor,
+                                  borderRadius:
+                                      BorderRadius.circular(widget.radius),
+                                ),
+                              ),
+                              _initialsText,
+                            ]
+                          : <Widget>[
+                              _initialsText,
+                              profileImage(),
+                            ],
                 ),
               ),
             )),
@@ -128,18 +136,20 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
   Widget profileImage() {
     return widget.cacheImage
         ? ClipRRect(
-      borderRadius: BorderRadius.circular(widget.radius),
-      child: CachedNetworkImage(
-        fit: BoxFit.cover,
-        imageUrl: widget.imageUrl,
-        errorWidget: widget.errorWidget,
-        placeholder: widget.placeHolder,
-        imageBuilder: widget.imageBuilder,
-        useOldImageOnUrlChange: widget.useOldImageOnUrlChange==null?false:widget.useOldImageOnUrlChange,
-      ),
-    )
+            borderRadius: BorderRadius.circular(widget.radius),
+            child: CachedNetworkImage(
+              fit: BoxFit.cover,
+              imageUrl: widget.imageUrl,
+              errorWidget: widget.errorWidget,
+              placeholder: widget.placeHolder,
+              imageBuilder: widget.imageBuilder,
+              useOldImageOnUrlChange: widget.useOldImageOnUrlChange == null
+                  ? false
+                  : widget.useOldImageOnUrlChange,
+            ),
+          )
         : CircleAvatar(
-      backgroundImage: NetworkImage(widget.imageUrl),
-    );
+            backgroundImage: NetworkImage(widget.imageUrl),
+          );
   }
 }
