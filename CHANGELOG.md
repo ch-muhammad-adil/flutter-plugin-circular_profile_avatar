@@ -1,3 +1,6 @@
+## [1.0.3] - 28 Novemeber 2019
+upgraded dependencies
+
 ## [1.0.1] - 31 August 2019
 upgraded dependencies, upgraded plugin to stable version 1.0.1 and formatted code
 
