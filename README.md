@@ -9,7 +9,7 @@ CircularProfileAvatar is a Flutter package which allows developers to implement 
    Add this to your package's pubspec.yaml file:      
          
     dependencies:
-       circular_profile_avatar: ^1.0.3
+       circular_profile_avatar: ^1.0.6
 
 and run 
 
@@ -38,6 +38,17 @@ and run
               showInitialTextAbovePicture: true, // setting it true will show initials text above profile picture, default false  
               )
         )
+        
+If you want to use AssetImage or any other resource than just pass that to Child parameter. It will be shown at priority. 
+
+        CircularProfileAvatar(
+                        '',
+                        child: FlutterLogo(),
+                        borderColor: Colors.purpleAccent,
+                        borderWidth: 5,
+                        elevation: 2,
+                        radius: 50,
+                      ),
 
 
 If this project help you reduce time to develop, you can give me a cup of coffee :) 

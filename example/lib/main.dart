@@ -37,11 +37,19 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
+              // testing for child widget which is using FlutterLogo
+              CircularProfileAvatar(
+                null,
+                child: FlutterLogo(),
+                borderColor: Colors.purpleAccent,
+                borderWidth: 5,
+                elevation: 2,
+                radius: 50,
+              ),
+
               CircularProfileAvatar(
 //                  'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4',
-//                  'http://plavixprime.com/wp-content/uploads/nature-beauty-denmarks-natural-beauty-spots-your-guide-to-natures-most.jpg',
-
-                'https/avatars0.github',
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWtMDksH9GzFdMinyAkGbtLJNx6xynLETTNN5akjxirL3QD5Rj',
                 errorWidget: (context, url, error) => Container(
                   child: Icon(Icons.error),
                 ),

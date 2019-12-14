@@ -23,7 +23,8 @@ class CircularProfileAvatar extends StatefulWidget {
       this.placeHolder,
       this.errorWidget,
       this.imageBuilder,
-      this.useOldImageOnUrlChange})
+      this.animateFromOldImageOnUrlChange,
+      this.child})
       : super(key: key);
 
   /// sets radius of the avatar circle, [borderWidth] is also included in this radius.
@@ -77,7 +78,11 @@ class CircularProfileAvatar extends StatefulWidget {
 
   /// When set to true it will animate from the old image to the new image
   /// if the url changes.
-  final bool useOldImageOnUrlChange;
+  final bool animateFromOldImageOnUrlChange;
+
+  /// Setting child will hide every other widget [initialsText] and profile picture against [imageUrl].
+  /// Best use case is passing [AssetImage] as profile picture. You can pass [imageUrl] as empty string if you want to set child value.
+  final Widget child;
 
   @override
   _CircularProfileAvatarState createState() => _CircularProfileAvatarState();
@@ -85,6 +90,7 @@ class CircularProfileAvatar extends StatefulWidget {
 
 class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
   Widget _initialsText;
+
   @override
   Widget build(BuildContext context) {
     _initialsText = Center(child: widget.initialsText);
@@ -106,29 +112,42 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                 decoration: BoxDecoration(
                     color: widget.backgroundColor,
                     borderRadius: BorderRadius.circular(widget.radius)),
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: widget.imageUrl.isEmpty
-                      ? <Widget>[_initialsText]
-                      : widget.showInitialTextAbovePicture
-                          ? <Widget>[
-                              profileImage(),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: widget.foregroundColor,
-                                  borderRadius:
-                                      BorderRadius.circular(widget.radius),
-                                ),
-                              ),
-                              _initialsText,
-                            ]
-                          : <Widget>[
-                              _initialsText,
-                              profileImage(),
-                            ],
-                ),
+                child: widget.child == null
+                    ? Stack(
+                        fit: StackFit.expand,
+                        children: widget.imageUrl.isEmpty
+                            ? <Widget>[_initialsText]
+                            : widget.showInitialTextAbovePicture
+                                ? <Widget>[
+                                    profileImage(),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: widget.foregroundColor,
+                                        borderRadius: BorderRadius.circular(
+                                            widget.radius),
+                                      ),
+                                    ),
+                                    _initialsText,
+                                  ]
+                                : <Widget>[
+                                    _initialsText,
+                                    profileImage(),
+                                  ],
+                      )
+                    : child(),
               ),
             )),
+      ),
+    );
+  }
+
+  Widget child() {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(widget.radius),
+      child: Container(
+        height: widget.radius * 2 - widget.borderWidth,
+        width: widget.radius * 2 - widget.borderWidth,
+        child: widget.child,
       ),
     );
   }
@@ -143,9 +162,10 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
               errorWidget: widget.errorWidget,
               placeholder: widget.placeHolder,
               imageBuilder: widget.imageBuilder,
-              useOldImageOnUrlChange: widget.useOldImageOnUrlChange == null
-                  ? false
-                  : widget.useOldImageOnUrlChange,
+              useOldImageOnUrlChange:
+                  widget.animateFromOldImageOnUrlChange == null
+                      ? false
+                      : widget.animateFromOldImageOnUrlChange,
             ),
           )
         : CircleAvatar(
