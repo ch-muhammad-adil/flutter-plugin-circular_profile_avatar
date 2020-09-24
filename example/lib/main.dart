@@ -42,11 +42,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 null,
                 child: FlutterLogo(),
                 borderColor: Colors.purpleAccent,
-                borderWidth: 5,
-                elevation: 2,
+                borderWidth: 2,
+                elevation: 5,
                 radius: 50,
               ),
-
+              CircularProfileAvatar(
+                null,
+                child: Icon(
+                  Icons.person,
+                  size: 140,
+                ),
+                borderColor: Colors.black,
+                borderWidth: 3,
+                elevation: 5,
+                radius: 75,
+              )
+              ,
               CircularProfileAvatar(
 //                  'https://avatars0.githubusercontent.com/u/8264639?s=460&v=4',
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWtMDksH9GzFdMinyAkGbtLJNx6xynLETTNN5akjxirL3QD5Rj',
