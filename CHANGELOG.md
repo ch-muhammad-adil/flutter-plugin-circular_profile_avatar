@@ -1,3 +1,6 @@
+## [1.0.8] - 28 October 2020
+Added progress indicator widget objection, which works only if cache is true.
+
 ## [1.0.5] - 14 December 2019
 Added support for child widget, child widget will help to set AssetImages or any other resource too. 
 

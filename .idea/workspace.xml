@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71e834aa-bfa2-46b4-b367-b2dd8fa5ac09" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/circular_profile_avatar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/circular_profile_avatar.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
@@ -144,21 +141,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="130" key="GridCell.Tab.0.bottom" timestamp="1600924052272">
+    <state width="1238" height="130" key="GridCell.Tab.0.bottom" timestamp="1600927059724">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="130" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1600924052272" />
-    <state width="1238" height="130" key="GridCell.Tab.0.center" timestamp="1600924052272">
+    <state width="1238" height="130" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1600927059724" />
+    <state width="1238" height="130" key="GridCell.Tab.0.center" timestamp="1600927059722">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="130" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1600924052272" />
-    <state width="1238" height="130" key="GridCell.Tab.0.left" timestamp="1600924052271">
+    <state width="1238" height="130" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1600927059722" />
+    <state width="1238" height="130" key="GridCell.Tab.0.left" timestamp="1600927059717">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="130" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1600924052271" />
-    <state width="1238" height="130" key="GridCell.Tab.0.right" timestamp="1600924052272">
+    <state width="1238" height="130" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1600927059717" />
+    <state width="1238" height="130" key="GridCell.Tab.0.right" timestamp="1600927059723">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="130" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1600924052272" />
+    <state width="1238" height="130" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1600927059723" />
+    <state width="345" height="169" key="javadoc.popup.new" timestamp="1603890334096">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="345" height="169" key="javadoc.popup.new/0.23.1280.728@0.23.1280.728" timestamp="1603890334096" />
   </component>
 </project>

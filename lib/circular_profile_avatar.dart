@@ -1,4 +1,5 @@
 library circular_profile_avatar;
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -23,6 +24,7 @@ class CircularProfileAvatar extends StatefulWidget {
       this.errorWidget,
       this.imageBuilder,
       this.animateFromOldImageOnUrlChange,
+      this.progressIndicatorBuilder,
       this.child})
       : super(key: key);
 
@@ -69,8 +71,11 @@ class CircularProfileAvatar extends StatefulWidget {
   /// Widget displayed while the target [imageUrl] is loading, works only if [cacheImage] is true.
   final PlaceholderWidgetBuilder placeHolder;
 
-  /// Widget displayed while the target [imageUrl] failed loading.
+  /// Widget displayed while the target [imageUrl] failed loading, works only if [cacheImage] is true.
   final LoadingErrorWidgetBuilder errorWidget;
+
+  /// Widget displayed while the target [imageUrl] is loading, works only if [cacheImage] is true.
+  final ProgressIndicatorBuilder progressIndicatorBuilder;
 
   /// Optional builder to further customize the display of the image.
   final ImageWidgetBuilder imageBuilder;
@@ -161,6 +166,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
               errorWidget: widget.errorWidget,
               placeholder: widget.placeHolder,
               imageBuilder: widget.imageBuilder,
+              progressIndicatorBuilder: widget.progressIndicatorBuilder,
               useOldImageOnUrlChange:
                   widget.animateFromOldImageOnUrlChange == null
                       ? false
