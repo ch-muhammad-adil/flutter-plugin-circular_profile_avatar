@@ -3,15 +3,39 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="71e834aa-bfa2-46b4-b367-b2dd8fa5ac09" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/android.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/flutter-plugin-circular_profile_avatar_android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/circular_profile_avatar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/circular_profile_avatar.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/circular_profile_avatar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/circular_profile_avatar.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
@@ -25,7 +49,6 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_29" />
   <component name="FindInProjectRecents">
     <findStrings>
       <find>circular_profile_avatar</find>
@@ -49,14 +72,17 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -132,34 +158,44 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="130" key="GridCell.Tab.0.bottom" timestamp="1600927059724">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1398" height="338" key="GridCell.Tab.0.bottom" timestamp="1615287265814">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1238" height="130" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1600927059724" />
-    <state width="1238" height="130" key="GridCell.Tab.0.center" timestamp="1600927059722">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1398" height="338" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1615287265814" />
+    <state width="1398" height="338" key="GridCell.Tab.0.center" timestamp="1615287265814">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1238" height="130" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1600927059722" />
-    <state width="1238" height="130" key="GridCell.Tab.0.left" timestamp="1600927059717">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1398" height="338" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1615287265814" />
+    <state width="1398" height="338" key="GridCell.Tab.0.left" timestamp="1615287265813">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1238" height="130" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1600927059717" />
-    <state width="1238" height="130" key="GridCell.Tab.0.right" timestamp="1600927059723">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1398" height="338" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1615287265813" />
+    <state width="1398" height="338" key="GridCell.Tab.0.right" timestamp="1615287265814">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1238" height="130" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1600927059723" />
-    <state width="345" height="169" key="javadoc.popup.new" timestamp="1603890334096">
-      <screen x="0" y="23" width="1280" height="728" />
+    <state width="1398" height="338" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1615287265814" />
+    <state x="221" y="98" key="SettingsEditor" timestamp="1615283676145">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="345" height="169" key="javadoc.popup.new/0.23.1280.728@0.23.1280.728" timestamp="1603890334096" />
+    <state x="221" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1615283676145" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/circular_profile_avatar.dart</url>
+          <line>166</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
