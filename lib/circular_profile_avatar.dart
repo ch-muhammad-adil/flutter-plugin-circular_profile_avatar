@@ -9,8 +9,7 @@ import 'package:flutter/widgets.dart';
 /// It is an alternative to Flutter's CircleAvatar Widget.
 class CircularProfileAvatar extends StatefulWidget {
   CircularProfileAvatar(this.imageUrl,
-      {Key key,
-      this.initialsText = const Text(''),
+      {this.initialsText = const Text(''),
       this.cacheImage = true,
       this.radius = 50.0,
       this.borderWidth = 0.0,
@@ -25,8 +24,7 @@ class CircularProfileAvatar extends StatefulWidget {
       this.imageBuilder,
       this.animateFromOldImageOnUrlChange,
       this.progressIndicatorBuilder,
-      this.child})
-      : super(key: key);
+      this.child});
 
   /// sets radius of the avatar circle, [borderWidth] is also included in this radius.
   /// default value is 0.0
@@ -66,34 +64,34 @@ class CircularProfileAvatar extends StatefulWidget {
   final bool cacheImage;
 
   /// sets onTap gesture.
-  final GestureTapCallback onTap;
+  final GestureTapCallback? onTap;
 
   /// Widget displayed while the target [imageUrl] is loading, works only if [cacheImage] is true.
-  final PlaceholderWidgetBuilder placeHolder;
+  final PlaceholderWidgetBuilder? placeHolder;
 
   /// Widget displayed while the target [imageUrl] failed loading, works only if [cacheImage] is true.
-  final LoadingErrorWidgetBuilder errorWidget;
+  final LoadingErrorWidgetBuilder? errorWidget;
 
   /// Widget displayed while the target [imageUrl] is loading, works only if [cacheImage] is true.
-  final ProgressIndicatorBuilder progressIndicatorBuilder;
+  final ProgressIndicatorBuilder? progressIndicatorBuilder;
 
   /// Optional builder to further customize the display of the image.
-  final ImageWidgetBuilder imageBuilder;
+  final ImageWidgetBuilder? imageBuilder;
 
   /// When set to true it will animate from the old image to the new image
   /// if the url changes.
-  final bool animateFromOldImageOnUrlChange;
+  final bool? animateFromOldImageOnUrlChange;
 
   /// Setting child will hide every other widget [initialsText] and profile picture against [imageUrl].
   /// Best use case is passing [AssetImage] as profile picture. You can pass [imageUrl] as empty string if you want to set child value.
-  final Widget child;
+  final Widget? child;
 
   @override
   _CircularProfileAvatarState createState() => _CircularProfileAvatarState();
 }
 
 class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
-  Widget _initialsText;
+  Widget? _initialsText;
 
   @override
   Widget build(BuildContext context) {
@@ -120,7 +118,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                     ? Stack(
                         fit: StackFit.expand,
                         children: widget.imageUrl.isEmpty
-                            ? <Widget>[_initialsText]
+                            ? <Widget>[_initialsText!]
                             : widget.showInitialTextAbovePicture
                                 ? <Widget>[
                                     profileImage(),
@@ -131,10 +129,10 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                                             widget.radius),
                                       ),
                                     ),
-                                    _initialsText,
+                                    _initialsText!,
                                   ]
                                 : <Widget>[
-                                    _initialsText,
+                                    _initialsText!,
                                     profileImage(),
                                   ],
                       )
@@ -168,9 +166,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
               imageBuilder: widget.imageBuilder,
               progressIndicatorBuilder: widget.progressIndicatorBuilder,
               useOldImageOnUrlChange:
-                  widget.animateFromOldImageOnUrlChange == null
-                      ? false
-                      : widget.animateFromOldImageOnUrlChange,
+                  widget.animateFromOldImageOnUrlChange ?? false,
             ),
           )
         : CircleAvatar(
