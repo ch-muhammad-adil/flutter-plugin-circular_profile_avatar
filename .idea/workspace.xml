@@ -23,22 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71e834aa-bfa2-46b4-b367-b2dd8fa5ac09" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/android/android.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/flutter-plugin-circular_profile_avatar_android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/circular_profile_avatar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/circular_profile_avatar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/circular_profile_avatar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/circular_profile_avatar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,36 +152,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="338" key="GridCell.Tab.0.bottom" timestamp="1615287265814">
+    <state width="1398" height="338" key="GridCell.Tab.0.bottom" timestamp="1615291520138">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="338" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1615287265814" />
-    <state width="1398" height="338" key="GridCell.Tab.0.center" timestamp="1615287265814">
+    <state width="1398" height="338" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1615291520138" />
+    <state width="1398" height="338" key="GridCell.Tab.0.center" timestamp="1615291520137">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="338" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1615287265814" />
-    <state width="1398" height="338" key="GridCell.Tab.0.left" timestamp="1615287265813">
+    <state width="1398" height="338" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1615291520137" />
+    <state width="1398" height="338" key="GridCell.Tab.0.left" timestamp="1615291520137">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="338" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1615287265813" />
-    <state width="1398" height="338" key="GridCell.Tab.0.right" timestamp="1615287265814">
+    <state width="1398" height="338" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1615291520137" />
+    <state width="1398" height="338" key="GridCell.Tab.0.right" timestamp="1615291520138">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="338" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1615287265814" />
-    <state x="221" y="98" key="SettingsEditor" timestamp="1615283676145">
+    <state width="1398" height="338" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1615291520138" />
+    <state x="221" y="98" key="SettingsEditor" timestamp="1615287948461">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="221" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1615283676145" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/circular_profile_avatar.dart</url>
-          <line>166</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="221" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1615287948461" />
   </component>
 </project>
