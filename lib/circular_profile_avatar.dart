@@ -51,7 +51,7 @@ class CircularProfileAvatar extends StatefulWidget {
   final Color foregroundColor;
 
   /// it takes a URL of the profile image.
-  final String imageUrl;
+  final String? imageUrl;
 
   /// Sets the initials of user's name.
   final Text initialsText;
@@ -117,24 +117,25 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                 child: widget.child == null
                     ? Stack(
                         fit: StackFit.expand,
-                        children: widget.imageUrl.isEmpty
-                            ? <Widget>[_initialsText!]
-                            : widget.showInitialTextAbovePicture
-                                ? <Widget>[
-                                    profileImage(),
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: widget.foregroundColor,
-                                        borderRadius: BorderRadius.circular(
-                                            widget.radius),
-                                      ),
-                                    ),
-                                    _initialsText!,
-                                  ]
-                                : <Widget>[
-                                    _initialsText!,
-                                    profileImage(),
-                                  ],
+                        children:
+                            widget.imageUrl == null || widget.imageUrl!.isEmpty
+                                ? <Widget>[_initialsText!]
+                                : widget.showInitialTextAbovePicture
+                                    ? <Widget>[
+                                        profileImage(),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: widget.foregroundColor,
+                                            borderRadius: BorderRadius.circular(
+                                                widget.radius),
+                                          ),
+                                        ),
+                                        _initialsText!,
+                                      ]
+                                    : <Widget>[
+                                        _initialsText!,
+                                        profileImage(),
+                                      ],
                       )
                     : child(),
               ),
@@ -160,9 +161,17 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
             borderRadius: BorderRadius.circular(widget.radius),
             child: CachedNetworkImage(
               fit: BoxFit.cover,
-              imageUrl: widget.imageUrl,
-              errorWidget: widget.errorWidget,
-              placeholder: widget.placeHolder,
+              imageUrl: widget.imageUrl ?? '',
+              errorWidget: widget.errorWidget ??
+                  (context, url, error) => Container(
+                        child: Icon(Icons.error),
+                      ),
+              placeholder: widget.placeHolder ??
+                  (context, url) => Container(
+                        width: 50,
+                        height: 50,
+                        child: CircularProgressIndicator(),
+                      ),
               imageBuilder: widget.imageBuilder,
               progressIndicatorBuilder: widget.progressIndicatorBuilder,
               useOldImageOnUrlChange:
@@ -170,7 +179,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
             ),
           )
         : CircleAvatar(
-            backgroundImage: NetworkImage(widget.imageUrl),
+            backgroundImage: NetworkImage(widget.imageUrl ?? ''),
           );
   }
 }
