@@ -1,3 +1,9 @@
+## [2.0.1-nullsafety] - 17 March 2021
+Upgraded to null safety (Flutter 2.0)
+
+## [2.0.1] - 09 March 2021
+Upgraded (Flutter 2.0)
+
 ## [1.0.8] - 28 October 2020
 Added progress indicator widget objection, which works only if cache is true.
 

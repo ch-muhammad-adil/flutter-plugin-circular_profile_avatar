@@ -23,20 +23,378 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71e834aa-bfa2-46b4-b367-b2dd8fa5ac09" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/android/android.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/flutter-plugin-circular_profile_avatar_android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_gallery.readme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/java/com/example/view/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/color/fab_ripple_color.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/drawable/ic_add_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/layout/flutter_view_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/assets/flutter-mark-square-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/MainViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/MainViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/NativeViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/NativeViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/ic_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/ios/Runner/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/flutter_view/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/fuchsia/meta/hello_world.cmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/GeneratedPluginRegistrant.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/ios/Runner/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/lib/arabic.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/test/hello_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/test_driver/smoke_web_engine.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/test_driver/smoke_web_engine_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/hello_world/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/images/coast.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/ios/Runner/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/image_list/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/analysis_options.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/ios/Runner/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/raw/canvas.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/raw/hello_world.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/raw/shader_warm_up.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/raw/spinning_square.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/raw/text.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/raw/touch_input.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/rendering/custom_coordinate_systems.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/rendering/flex_layout.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/rendering/hello_world.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/rendering/spinning_square.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/rendering/src/sector_layout.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/rendering/src/solid_color_box.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/rendering/touch_input.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/services/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/services/isolate.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/services/lifecycle.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/gestures_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/sector_layout_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/sector_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/lib/main_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/raw/canvas_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/raw/hello_world_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/raw/shader_warm_up_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/raw/spinning_square_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/raw/text_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/raw/touch_input_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/rendering/custom_coordinate_systems_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/rendering/flex_layout_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/rendering/hello_world_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/rendering/spinning_square_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/rendering/touch_input_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/services/isolate_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/services/lifecycle_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/widgets/custom_render_box_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/widgets/gestures_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/widgets/hello_world_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/widgets/media_query_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/widgets/sectors_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/widgets/spinning_mixed_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/widgets/spinning_square_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/test/smoketests/widgets/styled_text_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/widgets/custom_render_box.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/widgets/gestures.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/widgets/hello_world.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/widgets/media_query.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/widgets/sectors.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/widgets/spinning_mixed.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/widgets/spinning_square.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/layers/widgets/styled_text.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/android/app/src/androidTest/java/com/example/platformchannel/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/android/app/src/main/java/com/example/platformchannel/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/ios/Runner/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/test_driver/button_tap.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel/test_driver/button_tap_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/test_driver/button_tap.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_channel_swift/test_driver/button_tap_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/java/io/flutter/examples/platform_view/CountActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/java/io/flutter/examples/platform_view/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/drawable/ic_add_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/layout/android_full_screen_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/assets/flutter-mark-square-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Podfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/PlatformViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/PlatformViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/ic_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/ios/Runner/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/platform_view/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/splash/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/splash/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fvm/flutter_sdk/examples/splash/test/splash_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/circular_profile_avatar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/circular_profile_avatar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/circular_profile_avatar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/circular_profile_avatar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
@@ -49,6 +407,7 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="FindInProjectRecents">
     <findStrings>
       <find>circular_profile_avatar</find>
@@ -91,7 +450,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -166,36 +525,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="338" key="GridCell.Tab.0.bottom" timestamp="1615287265814">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state width="1226" height="221" key="GridCell.Tab.0.bottom" timestamp="1615990566356">
+      <screen x="0" y="25" width="1280" height="719" />
     </state>
+    <state width="1226" height="221" key="GridCell.Tab.0.bottom/0.25.1280.719@0.25.1280.719" timestamp="1615990566356" />
     <state width="1398" height="338" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1615287265814" />
-    <state width="1398" height="338" key="GridCell.Tab.0.center" timestamp="1615287265814">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state width="1226" height="221" key="GridCell.Tab.0.center" timestamp="1615990566355">
+      <screen x="0" y="25" width="1280" height="719" />
     </state>
+    <state width="1226" height="221" key="GridCell.Tab.0.center/0.25.1280.719@0.25.1280.719" timestamp="1615990566355" />
     <state width="1398" height="338" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1615287265814" />
-    <state width="1398" height="338" key="GridCell.Tab.0.left" timestamp="1615287265813">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state width="1226" height="221" key="GridCell.Tab.0.left" timestamp="1615990566355">
+      <screen x="0" y="25" width="1280" height="719" />
     </state>
+    <state width="1226" height="221" key="GridCell.Tab.0.left/0.25.1280.719@0.25.1280.719" timestamp="1615990566355" />
     <state width="1398" height="338" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1615287265813" />
-    <state width="1398" height="338" key="GridCell.Tab.0.right" timestamp="1615287265814">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state width="1226" height="221" key="GridCell.Tab.0.right" timestamp="1615990566356">
+      <screen x="0" y="25" width="1280" height="719" />
     </state>
+    <state width="1226" height="221" key="GridCell.Tab.0.right/0.25.1280.719@0.25.1280.719" timestamp="1615990566356" />
     <state width="1398" height="338" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1615287265814" />
-    <state x="221" y="98" key="SettingsEditor" timestamp="1615283676145">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="196" y="25" width="997" height="719" key="SettingsEditor" timestamp="1615990121466">
+      <screen x="0" y="25" width="1280" height="719" />
     </state>
+    <state x="196" y="25" width="997" height="719" key="SettingsEditor/0.25.1280.719@0.25.1280.719" timestamp="1615990121466" />
     <state x="221" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1615283676145" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/circular_profile_avatar.dart</url>
-          <line>166</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="345" height="169" key="javadoc.popup.new" timestamp="1615992751057">
+      <screen x="0" y="25" width="1280" height="719" />
+    </state>
+    <state width="345" height="169" key="javadoc.popup.new/0.25.1280.719@0.25.1280.719" timestamp="1615992751057" />
   </component>
 </project>

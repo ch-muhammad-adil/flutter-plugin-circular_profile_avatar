@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               // testing for child widget which is using FlutterLogo
               CircularProfileAvatar(
-                null,
+                '',
                 child: FlutterLogo(),
                 borderColor: Colors.purpleAccent,
                 borderWidth: 2,
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 radius: 50,
               ),
               CircularProfileAvatar(
-                null,
+                '',
                 child: Icon(
                   Icons.person,
                   size: 140,
