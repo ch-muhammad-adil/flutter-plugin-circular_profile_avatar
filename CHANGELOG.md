@@ -1,4 +1,4 @@
-## [2.0.4] - 03 September 2021
+## [2.0.5] - 03 September 2021
 Web support, Added boxFit property, improved border stroke and fixed extra padding issue. 
 
 ## [2.0.1-nullsafety] - 17 March 2021
