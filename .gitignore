@@ -10,3 +10,4 @@ ios/Flutter/Generated.xcconfig
 ios/Runner/GeneratedPluginRegistrant.*
 /.fvm
 /android
+.idea/workspace.xml

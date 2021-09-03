@@ -88,8 +88,7 @@ class CircularProfileAvatar extends StatefulWidget {
   final Widget? child;
 
   /// How to inscribe the image into the space allocated during layout.
-  /// Set the BoxFit value as you want.
-
+  /// Set the [BoxFit] value as you want.
   final BoxFit imageFit;
 
   @override
@@ -111,10 +110,11 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
         child: Container(
             height: widget.radius * 2,
             width: widget.radius * 2,
-            padding: EdgeInsets.all(widget.borderWidth),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(widget.radius),
-                color: widget.borderColor),
+              borderRadius: BorderRadius.circular(widget.radius),
+              border: Border.all(
+                  width: widget.borderWidth, color: widget.borderColor),
+            ),
             child: Center(
               child: Container(
                 decoration: BoxDecoration(
@@ -153,8 +153,8 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
     return ClipRRect(
       borderRadius: BorderRadius.circular(widget.radius),
       child: Container(
-        height: widget.radius * 2 - widget.borderWidth,
-        width: widget.radius * 2 - widget.borderWidth,
+        height: widget.radius * 2,
+        width: widget.radius * 2,
         child: widget.child,
       ),
     );

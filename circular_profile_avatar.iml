@@ -232,6 +232,9 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/Flutter/flutter_assets/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example_app/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/.fvm/flutter_sdk/dev/benchmarks/multiple_flutters/module/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/.fvm/flutter_sdk/dev/benchmarks/multiple_flutters/module/build" />
+      <excludeFolder url="file://$MODULE_DIR$/.fvm/flutter_sdk/dev/benchmarks/multiple_flutters/module/.dart_tool" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

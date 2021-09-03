@@ -4,17 +4,6 @@ CircularProfileAvatar is a Flutter package which allows developers to implement 
 
 ![](screenshots/Screenshot.png)
 
-# Installation
-         
-   Add this to your package's pubspec.yaml file:      
-         
-    dependencies:
-       circular_profile_avatar: ^1.0.8
-
-and run 
-
-     flutter packages get
-
 # Usage
 
        
@@ -32,6 +21,7 @@ and run
               elevation: 5.0, // sets elevation (shadow of the profile picture), default value is 0.0
               foregroundColor: Colors.brown.withOpacity(0.5), //sets foreground colour, it works if showInitialTextAbovePicture = true , default Colors.transparent
               cacheImage: true, // allow widget to cache image against provided url
+              imageFit = BoxFit.cover,  
               onTap: () {
                 print('adil');
               }, // sets on tap 
