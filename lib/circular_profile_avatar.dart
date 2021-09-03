@@ -24,7 +24,8 @@ class CircularProfileAvatar extends StatefulWidget {
       this.imageBuilder,
       this.animateFromOldImageOnUrlChange,
       this.progressIndicatorBuilder,
-      this.child});
+      this.child,
+      this.imageFit = BoxFit.cover});
 
   /// sets radius of the avatar circle, [borderWidth] is also included in this radius.
   /// default value is 0.0
@@ -85,6 +86,11 @@ class CircularProfileAvatar extends StatefulWidget {
   /// Setting child will hide every other widget [initialsText] and profile picture against [imageUrl].
   /// Best use case is passing [AssetImage] as profile picture. You can pass [imageUrl] as empty string if you want to set child value.
   final Widget? child;
+
+  /// How to inscribe the image into the space allocated during layout.
+  /// Set the BoxFit value as you want.
+
+  final BoxFit imageFit;
 
   @override
   _CircularProfileAvatarState createState() => _CircularProfileAvatarState();
@@ -159,7 +165,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
         ? ClipRRect(
             borderRadius: BorderRadius.circular(widget.radius),
             child: CachedNetworkImage(
-              fit: BoxFit.cover,
+              fit: widget.imageFit,
               imageUrl: widget.imageUrl,
               errorWidget: widget.errorWidget,
               placeholder: widget.placeHolder,
@@ -169,8 +175,11 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
                   widget.animateFromOldImageOnUrlChange ?? false,
             ),
           )
-        : CircleAvatar(
-            backgroundImage: NetworkImage(widget.imageUrl),
-          );
+        : ClipRRect(
+            borderRadius: BorderRadius.circular(widget.radius),
+            child: Image.network(
+              widget.imageUrl,
+              fit: widget.imageFit,
+            ));
   }
 }

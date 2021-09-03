@@ -76,6 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //                    style: TextStyle(fontSize: 40, color: Colors.white),
 //                  ),
                 borderColor: Colors.red,
+                imageFit: BoxFit.fitHeight,
                 elevation: 5.0,
                 onTap: () {
                   print('adil');
