@@ -1,5 +1,5 @@
-## [2.0.2] - 03 September 2021
-Added boxFit property, improved border stroke and fixed extra padding issue. 
+## [2.0.3] - 03 September 2021
+Web support, Added boxFit property, improved border stroke and fixed extra padding issue. 
 
 ## [2.0.1-nullsafety] - 17 March 2021
 Upgraded to null safety (Flutter 2.0)

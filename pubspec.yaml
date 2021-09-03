@@ -1,7 +1,14 @@
 name: circular_profile_avatar
 description: CircularProfileAvatar allows developers to implement circular profile avatar with border, overlay, initialsText and many other features which simplifies developer's job.
-version: 2.0.2
+version: 2.0.3
 homepage: https://github.com/ch-muhammad-adil/flutter-circular_profile_avatar
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: CircularProfileAvatar
+        fileName: circular_profile_avatar.dart
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -23,7 +30,7 @@ dev_dependencies:
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
 # The following section is specific to Flutter.
-flutter:
+
 
   # To add assets to your package, add an assets section, like this:
   # assets:

@@ -1,11 +1,11 @@
 # circular_profile_avatar
 
-CircularProfileAvatar is a Flutter package which allows developers to implement circular profile avatar with border, overlay, initialsText and many other awesome features, which simplifies developers job. It is an alternative to Flutter's [CircleAvatar](https://docs.flutter.io/flutter/material/CircleAvatar-class.html) Widget.
+CircularProfileAvatar is a [Flutter package](https://pub.dev/packages/circular_profile_avatar) which allows developers to implement circular profile avatar with border, overlay, initialsText and many other awesome features, which simplifies developers job. It is an alternative to Flutter's [CircleAvatar](https://docs.flutter.io/flutter/material/CircleAvatar-class.html) Widget.
 
 ![](screenshots/Screenshot.png)
 
-# Usage
 
+# Usage
        
  
         CircularProfileAvatar(
