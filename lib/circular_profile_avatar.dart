@@ -25,7 +25,9 @@ class CircularProfileAvatar extends StatefulWidget {
       this.animateFromOldImageOnUrlChange,
       this.progressIndicatorBuilder,
       this.child,
-      this.imageFit = BoxFit.cover});
+      this.imageFit = BoxFit.cover,
+      this.httpHeaders,
+      this.cookies});
 
   /// sets radius of the avatar circle, [borderWidth] is also included in this radius.
   /// default value is 0.0
@@ -38,6 +40,10 @@ class CircularProfileAvatar extends StatefulWidget {
   /// sets the borderWidth of the circile,
   /// default value is 0.0
   final double borderWidth;
+//sets the Http headers to fetch the URL
+  final Map<String, String>? httpHeaders;
+  //sets the cookie for the request
+  final Map<String, String>? cookies;
 
   /// The color with which to fill the border of the circle.
   /// default value [Colors.white]
@@ -97,9 +103,10 @@ class CircularProfileAvatar extends StatefulWidget {
 
 class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
   Widget? _initialsText;
-
+  Map<String, String>? httpHeaders;
   @override
   Widget build(BuildContext context) {
+    httpHeaders = widget.httpHeaders;
     _initialsText = Center(child: widget.initialsText);
     return GestureDetector(
       onTap: widget.onTap,
@@ -161,11 +168,30 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
   }
 
   Widget profileImage() {
+    if (widget.cookies != null && widget.cookies!.isNotEmpty) {
+      StringBuffer cookieBuffer = StringBuffer();
+      widget.cookies!.entries.forEach((element) {
+        cookieBuffer.write("${element.key.trim()}=${element.value.trim()}");
+        cookieBuffer.write(";");
+      });
+
+      String cookie =
+          cookieBuffer.toString().substring(0, cookieBuffer.length - 1);
+
+      if (httpHeaders != null && httpHeaders!.isNotEmpty) {
+        httpHeaders!.remove("Cookie");
+      } else {
+        httpHeaders = Map();
+        httpHeaders!["Cookie"] = cookie;
+      }
+    }
+
     return widget.cacheImage
         ? ClipRRect(
             borderRadius: BorderRadius.circular(widget.radius),
             child: CachedNetworkImage(
               fit: widget.imageFit,
+              httpHeaders: httpHeaders ?? {},
               imageUrl: widget.imageUrl,
               errorWidget: widget.errorWidget,
               placeholder: widget.placeHolder,
@@ -180,6 +206,7 @@ class _CircularProfileAvatarState extends State<CircularProfileAvatar> {
             child: Image.network(
               widget.imageUrl,
               fit: widget.imageFit,
+              headers: httpHeaders,
             ));
   }
 }
